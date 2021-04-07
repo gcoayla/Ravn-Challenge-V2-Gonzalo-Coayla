@@ -1,2 +1,82 @@
-/* Neutrality */
+/* Colors */
+/*
+    RavnBlack - #121212
+    Text/Dark - #333333
+    Text/Light - #828282
+    Text/Emphasis - #EC5757
+*/
 
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* Neutrality */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Text */
+h1{
+    font-size: 17pt;
+    color: rgba(255, 255, 255, 1);
+}
+h2{
+    font-size: 17pt;
+    color: rgba(0, 0, 0, 1);
+}
+.h2-low-emphasis{
+    color: rgba(0, 0, 0, 0.3);
+}
+.h2-high-emphasis{
+    color: rgba(235, 87, 87, 1);
+}
+p{
+    font-size: 14pt;
+    color: rgba(0, 0, 0, 1);
+}
+.p-low-emphasis{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/*** Header ***/
+header{
+    width: 100%;
+    padding: 10pt 20pt;
+    background-color: #121212;
+    color: #FFFFFF;
+}
+
+/*** AllPeople ***/
+.all-people{
+    width: 25%;
+    float: left;
+}
+.person-cell{
+    width: 90%;
+    margin-left: 16pt;
+    padding: 16pt 0pt;
+    border-bottom: 1px solid #828282;
+    display: flex;
+}
+.person-cell:hover{
+    cursor:pointer;
+}
+.person-cell-info{
+    width: 80%;
+}
+.person-cell-icon{
+    font-size: 20pt;
+    font-weight: 700;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*** Description ***/
+.description{
+    width: 75%;
+    float: left;
+}
