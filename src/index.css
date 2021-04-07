@@ -57,6 +57,7 @@ header{
     margin-left: 16pt;
     padding: 16pt 0pt;
     border-bottom: 1px solid #828282;
+    border-right: 1px solid #828282;
     display: flex;
 }
 .person-cell:hover{
