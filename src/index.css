@@ -41,23 +41,26 @@ p{
 
 /*** Header ***/
 header{
-    width: 100%;
-    padding: 10pt 20pt;
+    width: 90%;
+    padding: 10pt 5%;
     background-color: #121212;
     color: #FFFFFF;
 }
 
 /*** AllPeople ***/
-.all-people{
+.cont-all-people{
     width: 25%;
+}
+.all-people{
+    width: 90%;
     float: left;
+    border-right: 1px solid #828282;
 }
 .person-cell{
-    width: 90%;
+    width: 100%-32pt;
     margin-left: 16pt;
     padding: 16pt 0pt;
     border-bottom: 1px solid #828282;
-    border-right: 1px solid #828282;
     display: flex;
 }
 .person-cell:hover{
@@ -75,9 +78,24 @@ header{
     align-items: center;
 }
 
+/** Loading & Error**/
+.message{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10pt 0;
+}
+.loading-img{
+    width: 10%;
+}
+.loading-img img{
+    width: 100%;
+}
+
 
 /*** Description ***/
 .description{
     width: 75%;
-    float: left;
+    float: right;
 }
