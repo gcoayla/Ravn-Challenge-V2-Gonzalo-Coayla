@@ -7,22 +7,24 @@
 */
 
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 /* Neutrality */
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 /* Text */
 h1{
-    font-size: 17pt;
+    font-size: 17px;
     color: rgba(255, 255, 255, 1);
+    font-weight: 700;
 }
 h2{
-    font-size: 17pt;
+    font-size: 17px;
+    font-weight: 700;
     color: rgba(0, 0, 0, 1);
 }
 .h2-low-emphasis{
@@ -32,7 +34,8 @@ h2{
     color: rgba(235, 87, 87, 1);
 }
 p{
-    font-size: 14pt;
+    font-size: 14px;
+    font-weight: 400;
     color: rgba(0, 0, 0, 1);
 }
 .p-low-emphasis{
@@ -41,8 +44,8 @@ p{
 
 /*** Header ***/
 header{
-    width: 90%;
-    padding: 10pt 5%;
+    width: 100%-64px;
+    padding: 16px 32px;
     background-color: #121212;
     color: #FFFFFF;
 }
@@ -54,14 +57,14 @@ header{
 .all-people{
     width: 90%;
     float: left;
-    border-right: 1px solid #828282;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
     min-height: 1200px;
 }
 .person-cell{
     width: 100%-32pt;
     margin-left: 16pt;
     padding: 16pt 0pt;
-    border-bottom: 1px solid #828282;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     display: flex;
 }
 .person-cell:hover{
@@ -99,4 +102,27 @@ header{
 .description{
     width: 75%;
     float: right;
+}
+.wrap-description{
+    width: 80%;
+    margin: 0 auto;
+}
+.box-sub-title{
+    padding: 32px 0 8px 0;
+}
+/** Description box **/
+.box-information{
+    overflow: hidden;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.box-left{
+    width: 20%;
+    float: left;
+    padding: 14px 0 15px 0;
+}
+.box-right{
+    width: 80%-16px;
+    float:right;
+    text-align: right;
+    padding: 14px 16px 15px 0;
 }
