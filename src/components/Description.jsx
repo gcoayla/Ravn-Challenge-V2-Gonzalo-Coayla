@@ -21,17 +21,20 @@ const Description = () => {
             birthYear
             starshipConnection{
                 starships {
-                name
+                    id
+                    name
                 }
             }
             }
         }
     `;
-
-    const { loading, error, data } = useQuery(personQuery);
     
-    if(loading) return <Loading/>
-    if(error) return <Error/>
+    const { loading, error, data } = useQuery(personQuery);
+
+    if(loading && (idSelected === ' ')) return ' '
+    if(error && (idSelected === ' ')) return ' '
+    if(loading) return (<div className="description"><Loading/></div>)
+    if(error) return (<div className="description"><Error/></div>)
     
     return (
         <div className="description">
@@ -55,7 +58,7 @@ const Description = () => {
                 </div>
                 <h2 className="box-sub-title">Vehicles</h2>
                 {data.person.starshipConnection.starships.map(item =>
-                    <div className="box-information">
+                    <div className="box-information" key={item.id}>
                         <h2 className="h2-low-emphasis box-left">{item.name}</h2>
                     </div>
                 )}

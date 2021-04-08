@@ -5,7 +5,7 @@ const Loading = () => {
     return (
         <div className="message">
             <div className="loading-img">
-                <img src={load}/>
+                <img src={load} alt="loading..."/>
             </div>
             <h2 className="h2-low-emphasis">Loading</h2>
         </div>

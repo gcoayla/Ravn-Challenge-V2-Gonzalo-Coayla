@@ -44,15 +44,17 @@ p{
 
 /*** Header ***/
 header{
-    width: 100%-64px;
+    width: 100%;
     padding: 16px 32px;
     background-color: #121212;
     color: #FFFFFF;
+    position: fixed;
 }
 
 /*** AllPeople ***/
 .cont-all-people{
     width: 25%;
+    padding-top: 52px;
 }
 .all-people{
     width: 90%;
@@ -60,6 +62,7 @@ header{
     border-right: 1px solid rgba(0, 0, 0, 0.1);
     min-height: 1200px;
 }
+/** Person **/
 .person-cell{
     width: 100%-32pt;
     margin-left: 16pt;
@@ -82,29 +85,19 @@ header{
     align-items: center;
 }
 
-/** Loading & Error**/
-.message{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10pt 0;
-}
-.loading-img{
-    width: 10%;
-}
-.loading-img img{
-    width: 100%;
-}
-
-
 /*** Description ***/
 .description{
     width: 75%;
-    float: right;
+    position:fixed;
+    right: 0;
+    top:52px;
 }
 .wrap-description{
     width: 80%;
+    margin: 0 auto;
+}
+.wrap-description-message{
+    width: 20%;
     margin: 0 auto;
 }
 .box-sub-title{
@@ -125,4 +118,19 @@ header{
     float:right;
     text-align: right;
     padding: 14px 16px 15px 0;
+}
+
+/** Loading & Error**/
+.message{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0;
+}
+.loading-img{
+    width: 10%;
+}
+.loading-img img{
+    width: 100%;
 }
