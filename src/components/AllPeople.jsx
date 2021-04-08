@@ -40,7 +40,7 @@ const AllPeople = ({number, totalNumber, totalIter}) => {
     return (
         <>
             {filteredData.map(item =>
-                <Person key={item.id} name={item.name} specie={item.species? item.species.name : "Human"} homeWorld={item.homeworld.name} />  
+                <Person key={item.id} name={item.name} specie={item.species? item.species.name : "Human"} homeWorld={item.homeworld.name} idPerson={item.id}/>  
             )}
             {number<totalIter*5 ? 
             <AllPeople key={number} number={number+5} totalNumber={totalNumber} totalIter={totalIter}/> : ''}
