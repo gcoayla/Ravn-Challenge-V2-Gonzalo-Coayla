@@ -1,6 +1,7 @@
 # Ravn-Challenge-V2
 Simgle-page application created for the challenge V2 of the Ravn company.
-Autor: Gonzalo Eduardo Coayla Zúñiga
+
+Author: Gonzalo Eduardo Coayla Zúñiga
 
 ## Technologies used
 - ReactJs library
