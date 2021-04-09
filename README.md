@@ -1,5 +1,5 @@
 # Ravn-Challenge-V2
-Simgle-page application created for the challenge V2 of the Ravn company.
+Single-page application created for the challenge V2 of the Ravn company.
 
 Author: Gonzalo Eduardo Coayla Zúñiga
 
@@ -15,13 +15,13 @@ Author: Gonzalo Eduardo Coayla Zúñiga
 
 1. Clone or download the project.
 2. Run `npm install` to install all the dependencies.
-3. Run `npm start` to inicialize the application.
+3. Run `npm start` to initialize the application.
 4. Navigate to `http://localhost:3000` in your browser.
 
 ## Project description
-The proyect consume a a service based in GraphQl to show all the characters of the StarWars universe and allows us to select each character to show more information like the color of their eyes or the vehicles that the character uses in the movies.
+The project consumes a service based in GraphQl to show all the characters of the StarWars universe and allows us to select each character to show more information like the color of their eyes or the vehicles that the character uses in the movies.
 
-When the aplication starts it will try to load the first 5 characters  and we'll see the loading icon.
+When the application starts it will try to load the first 5 characters  and we'll see the loading icon.
 
 ![Loading](./app_screenshots/loading.png?raw=true "Loading")
 
