@@ -8,7 +8,7 @@ const Principal = () => {
         <>
             < div className="cont-all-people">  
                 <div className="all-people">
-                    <AllPeople key={5} number={5}/>
+                    <AllPeople key={1} last=" "/>
                 </div>
             </ div>
             <Description/>
